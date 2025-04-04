@@ -66,15 +66,6 @@ clusterGroup:
       chart: ansible-automation-platform-instance
       chartVersion: 0.1.*
 
-    aap-config:
-      name: aap-config
-      namespace: aap-config
-      project: hub
-      chart: aap-config
-      chartVersion: 0.1.*
-      extraValueFiles:
-        - '$patternref/overrides/values-aap-config-aeg.yaml'
-
     vault:
       name: vault
       namespace: vault
